@@ -1,5 +1,7 @@
 <template>
-  <section >
+  <section class="container">
+    <Navbar/>
+    <Showcase/>
       <About/>
       <Projects/>
       <Contact/>
@@ -7,14 +9,16 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Navbar from '~/components/Navbar.vue'
+import Showcase from '~/components/Showcase.vue'
 import About from '~/components/About.vue'
 import Contact from '~/components/Contact.vue'
 import Projects from '~/components/Projects.vue'
 
 export default {
   components: {
-    Logo,
+    Navbar,
+    Showcase,
     About,
     Contact,
     Projects
@@ -55,3 +59,4 @@ export default {
   padding-top: 15px;
 } */
 </style>
+
