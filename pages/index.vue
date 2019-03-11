@@ -1,35 +1,23 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        buildTogether
-      </h1>
-      <h2 class="subtitle">
-        My polished Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
+  <section >
+      <About/>
+      <Projects/>
+      <Contact/>
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import About from '~/components/About.vue'
+import Contact from '~/components/Contact.vue'
+import Projects from '~/components/Projects.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    About,
+    Contact,
+    Projects
   }
 }
 </script>
@@ -39,12 +27,13 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.title {
+/* .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
@@ -64,5 +53,5 @@ export default {
 
 .links {
   padding-top: 15px;
-}
+} */
 </style>
